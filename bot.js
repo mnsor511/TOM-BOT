@@ -540,9 +540,6 @@ LOka.on('guildMemberAdd', member => {
  
  
  
-LOka.login("توكن البوت")
-
-
 
 
 
