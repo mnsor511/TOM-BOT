@@ -347,7 +347,7 @@ client.login(process.env.BOT_TOKEN);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`TOM`,"http://twitch.tv/S-F")
+client.user.setGame(`toM`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
