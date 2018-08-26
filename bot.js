@@ -374,7 +374,7 @@ client.user.setGame(`toM`,"http://twitch.tv/S-F")
 client.login(process.env.BOT_TOKEN);
 
 client.on('message', message => {
-const developers = ["303891484481028096"]
+const developers = ["462503125048360960"]
 
 const adminprefix = '!';
     var argresult = message.content.split(` `).slice(1).join(' ');
