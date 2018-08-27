@@ -347,7 +347,7 @@ client.login(process.env.BOT_TOKEN);
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`メリオダス`,"http://twitch.tv/S-F")
+client.user.setGame(``,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -374,7 +374,7 @@ client.user.setGame(`メリオダス`,"http://twitch.tv/S-F")
 client.login(process.env.BOT_TOKEN);
 
 client.on('message', message => {
-const developers = ["303891484481028096"]
+const developers = ["462503125048360960"]
 
 const adminprefix = '!';
     var argresult = message.content.split(` `).slice(1).join(' ');
@@ -632,11 +632,4 @@ hours = 12;
 
 
 
-});
 
-client.on('message', msg => {
-  if (msg.content === 'سلام') {
-    msg.channel.send('وعليكم السلام
-		     ');
-  }
-});
