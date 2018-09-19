@@ -521,7 +521,6 @@ client.on("message", message => { //clear
 
 
 
- const fs = require('fs');
 const db = fs.database();
 client.oN("message", message => {
         if (message.content === "setprefix") {
