@@ -477,7 +477,7 @@ if( verifed.some(word => message.author.id.includes(word)) ) {    return message
 
 
 
-client.oN("message", message => {
+
         if (message.content === "setprefix") {
         if (message.author.id !== "482313038020739082" && !message.member.hasPermission("MANAGE_GUILD")) return message.channel.send(`U don't have permission to do that`);
   let args = message.content.split(" ").slice(1);
