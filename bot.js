@@ -479,7 +479,7 @@ if( verifed.some(word => message.author.id.includes(word)) ) {    return message
 
 
         if (message.content === "setprefix") {
-        if (message.author.id !== "482313038020739082" && !message.member.hasPermission("MANAGE_GUILD")) return message.channel.send(`U don't have permission to do that`);
+        if (message.author.id !== "303891484481028096" && !message.member.hasPermission("MANAGE_GUILD")) return message.channel.send(`U don't have permission to do that`);
   let args = message.content.split(" ").slice(1);
         let arg = args.join("").substring(message.length)
         if (!arg) return message.channel.send(`Please add a prefix after command like \`\`${prefix}setprefix &\`\``);
