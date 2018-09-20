@@ -477,7 +477,21 @@ if( verifed.some(word => message.author.id.includes(word)) ) {    return message
 
 
 
-
+client.oN("message", message => {
+        if (message.content === "setprefix") {
+        if (message.author.id !== "482313038020739082" && !message.member.hasPermission("MANAGE_GUILD")) return message.channel.send(`U don't have permission to do that`);
+  let args = message.content.split(" ").slice(1);
+        let arg = args.join("").substring(message.length)
+        if (!arg) return message.channel.send(`Please add a prefix after command like \`\`${prefix}setprefix &\`\``);
+        fs.database().ref('servers/' + message.guild.id).update({
+            guildname: message.guild.name,
+            guildprefix: arg
+        }).catch(function(err) {
+            message.channel.send(err + "\n\n\n");
+        });
+        message.channel.send(`prefix updated ${arg} for ${message.guild.name}`);
+    }
+});
 
 
 
